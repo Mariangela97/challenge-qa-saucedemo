@@ -1,0 +1,31 @@
+{
+  "name": "challenge-qa-saucedemo",
+  "version": "1.0.0",
+  "description": "Automation Test Suite para Sauce Demo utilizando Playwright, Cucumber (BDD) y Page Object Model (POM)",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rimraf reports",
+    "test": "cucumber-js",
+    "test:headed": "cucumber-js --world-parameters '{\"headless\": false}'",
+    "report": "open-cli reports/cucumber-report.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mariangela97/challenge-qa-saucedemo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Mariangela97/challenge-qa-saucedemo/issues"
+  },
+  "homepage": "https://github.com/Mariangela97/challenge-qa-saucedemo#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.7.0",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
