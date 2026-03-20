@@ -19,6 +19,12 @@ export class LoginPage {
     await this.page.goto('https://www.saucedemo.com/');
   }
 
+  async login(user: string, pass: string) {
+    if (user) await this.usernameInput.fill(user);
+    if (pass) await this.passwordInput.fill(pass);
+    await this.loginButton.click();
+  }
+
   async enterUsername(user: string) {
     await this.usernameInput.fill(user);
   }
